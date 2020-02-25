@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh ' cd /root/ping '
+                sh ' cd /var/lib/jenkins/ '
                 sh 'docker-compose down'
                 sh 'docker-compose up'
             }
