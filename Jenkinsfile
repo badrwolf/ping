@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh ' cd /var/lib/jenkins/ '
-                sh 'sudo docker-compose up'
+                sh ' docker-compose up'
                 
             }
         }
