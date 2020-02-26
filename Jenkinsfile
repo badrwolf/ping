@@ -18,7 +18,7 @@ pipeline {
         }
         stage('passed') {
             steps {
-                echo 'waaaayli dazeeet'
+                echo 'docker-compose stop rm up with success hopeeeee'
             }
         }
     }
