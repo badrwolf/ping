@@ -11,8 +11,8 @@ pipeline {
             steps {
                 sh ' cd /var/lib/jenkins/ '
                 sh 'sudo  docker-compose stop pingfederate'
-                sh 'sudo docker-compose rm'
-                sh 'sudo docker-compose up'
+                sh 'sudo docker-compose rm pingfederate'
+                sh 'sudo docker-compose up '
                 
             }
         }
