@@ -1,8 +1,8 @@
 node {
   stage('Clone repo ') {
-            steps{
+           
                 checkout scm
-            }
+            
   }
 
   stage('List pods') {
