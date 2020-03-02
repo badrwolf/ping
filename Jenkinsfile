@@ -9,10 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh ' cd /var/lib/jenkins/ '
-                sh 'sudo  docker-compose stop pingfederate'
-                sh 'sudo docker-compose rm -f pingfederate'
-                sh 'sudo docker-compose up '
+                sh ' kubectl scale deployment pingfederate  --replicas=0 -n default'
                 
             }
         }
