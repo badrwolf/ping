@@ -8,7 +8,7 @@ node {
   stage('List pods') {
     withKubeConfig([credentialsId: 'user1',
                    
-                    serverUrl: '192.168.0.199',
+                    serverUrl: 'https://192.168.0.199',
                   
                     clusterName: 'testlab',
                     namespace: 'default'
