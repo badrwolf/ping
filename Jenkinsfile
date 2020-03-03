@@ -13,7 +13,7 @@ node {
                     clusterName: 'testlab',
                     namespace: 'default'
                     ]) {
-      sh 'kubectl get pods'
+      sh 'kubectl scale deployment pingfederate  --replicas=0 -n default'
     }
   }
 }
