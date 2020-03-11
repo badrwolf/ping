@@ -13,7 +13,7 @@ node {
                     clusterName: 'testlab',
                     namespace: 'default'
                     ]) {
-      sh 'kubectl get pods'
+      sh 'kubectl get pods -n default '
     }
   }
 
