@@ -14,9 +14,6 @@ node {
                     namespace: 'default'
                     ]) {
               echo 'Pulling...' + env.BRANCH_NAME
-
-      sh 'kubectl scale deployment pingfederate  --replicas=0 -n default'
-      sh 'kubectl scale deployment pingfederate  --replicas=1 -n default'
     }
   }
 }
