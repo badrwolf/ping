@@ -1,4 +1,4 @@
-node { 
+[2;2R{ 
   
 
   stage('Clone repo ') {
@@ -13,7 +13,7 @@ node {
                     clusterName: 'testlab',
                     namespace: 'default'
                     ]) {
-      sh 'kubectl get deployments -n default '
+      sh 'kubectl get deployments -n default --insecure-skip-tls-verify '
     }
   }
 
