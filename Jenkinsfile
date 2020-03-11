@@ -9,11 +9,11 @@ node {
 
  stage('List pods') {
     withKubeConfig([credentialsId: 'user1',
-                    serverUrl: 'https://192.168.0.199/v3',
+                    serverUrl: 'https://192.168.0.199/',
                     clusterName: 'testlab',
                     namespace: 'default'
                     ]) {
-      sh 'kubectl get pods -n default '
+      sh 'kubectl get deployments -n default '
     }
   }
 
