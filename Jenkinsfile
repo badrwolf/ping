@@ -1,9 +1,7 @@
 node {
  
-  def getGitBranchName() {
-    return scm.branches[0].name
-}
- 
+  
+
   stage('Clone repo ') {
            
                 checkout scm
@@ -18,7 +16,8 @@ node {
                     clusterName: 'testlab',
                     namespace: 'default'
                     ]) {
-              echo 'Pulling...' + env.BRANCH_NAME
+            echo 'Pulling... ' + env.GIT_BRANCH
+
     }
   }
 }
