@@ -1,4 +1,4 @@
-[2;2R{ 
+node{ 
   
 
   stage('Clone repo ') {
